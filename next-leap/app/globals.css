@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+:root {
+  --leap-primary: #3B3BB5;
+  --leap-primary-light: #EEEEF8;
+  --leap-border: #E5E5E5;
+  --leap-text-primary: #1A1A1A;
+  --leap-text-secondary: #666666;
+  --leap-mint-bg: #E8F5F0;
+  --leap-mint-text: #2D7D5F;
+  --leap-warning-bg: #FFF0EE;
+  --leap-warning-text: #D94F3A;
+  --leap-success: #22C55E;
+}
+
+@theme inline {
+  --color-background: #FFFFFF;
+  --color-foreground: #1A1A1A;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background: #ffffff;
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #1a1a1a;
+}
+
+/* Slide transitions */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes dotPulse {
+  0%, 100% {
+    transform: scaleY(0.4);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.slide-right {
+  animation: slideInRight 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.slide-left {
+  animation: slideInLeft 0.22s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease-out;
+}
