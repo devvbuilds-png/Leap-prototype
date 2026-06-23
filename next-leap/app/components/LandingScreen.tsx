@@ -23,15 +23,19 @@ export default function LandingScreen({ onStart }: Props) {
           className="text-[38px] font-bold leading-[1.15] tracking-tight"
           style={{ color: "#1A1A1A" }}
         >
-          Should you<br />actually study<br />abroad?
+          Your next
+          <br />
+          career leap
+          <br />
+          is abroad.
         </h1>
 
         <p
           className="text-[15px] leading-relaxed"
           style={{ color: "#666666", maxWidth: "310px" }}
         >
-          See both futures — the honest math on what an abroad degree does for
-          your career, before you spend ₹40 lakhs finding out.
+          Map the degree, salary jump, and breakeven point that make studying
+          abroad a calculated career move.
         </p>
 
         {/* Trust indicators */}
@@ -64,7 +68,7 @@ export default function LandingScreen({ onStart }: Props) {
             color: "#FFFFFF",
           }}
         >
-          Get my free analysis →
+          Map my abroad future →
         </button>
         <p className="text-center text-xs" style={{ color: "#AAAAAA" }}>
           Free • 3 minutes • No sign-up

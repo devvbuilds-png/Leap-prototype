@@ -265,7 +265,7 @@ export default function RolesScreen({
 
       {/* Fixed bottom CTA */}
       <div
-        className="fixed bottom-0 left-0 right-0 flex justify-center z-20"
+        className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] flex justify-center z-20"
         style={{ background: "#FFFFFF", borderTop: "1px solid #E5E5E5" }}
       >
         <div className="w-full max-w-[390px] px-5 py-4 pb-6">
