@@ -804,11 +804,11 @@ export default function SimulatorScreen({
         className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] flex justify-center z-20"
         style={{ background: "#FFFFFF", borderTop: "1px solid #E5E5E5" }}
       >
-        <div className="w-full max-w-[390px] px-5 pt-3 pb-6 space-y-2">
+        <div className="w-full max-w-[390px] px-5 pt-4 pb-6">
           {/* Teaser strip */}
           <button
             onClick={onNext}
-            className="w-full flex items-center justify-between px-4 py-2.5 rounded-xl text-left active:scale-[0.98] transition-all"
+            className="hidden"
             style={{ background: "#EEEEF8" }}
           >
             <div className="flex items-center gap-2 min-w-0">
