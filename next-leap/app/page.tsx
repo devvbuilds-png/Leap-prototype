@@ -53,8 +53,8 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex justify-center bg-[#F6F4FF] md:py-6">
-      <div className="w-full max-w-[390px] min-h-screen flex flex-col relative overflow-x-hidden bg-white md:min-h-[844px] md:rounded-[28px] md:border md:border-white/80 md:shadow-[0_24px_70px_rgba(59,59,181,0.16)]">
+    <div className="min-h-screen flex justify-center bg-[#F6F4FF] md:h-screen md:py-6">
+      <div className="w-full max-w-[390px] min-h-screen flex flex-col relative overflow-x-hidden bg-white md:h-[calc(100vh-3rem)] md:min-h-0 md:max-h-[844px] md:rounded-[28px] md:border md:border-white/80 md:shadow-[0_24px_70px_rgba(59,59,181,0.16)]">
         {phase === "landing" && (
           <LandingScreen onStart={() => setPhase("onboarding")} />
         )}

@@ -6,7 +6,7 @@ interface Props {
 
 export default function LandingScreen({ onStart }: Props) {
   return (
-    <div className="flex-1 flex flex-col min-h-screen px-5 pt-14 pb-10 fade-in">
+    <div className="flex-1 flex flex-col min-h-screen px-5 pt-14 pb-10 fade-in md:min-h-0">
       {/* Wordmark */}
       <div>
         <span
